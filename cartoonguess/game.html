@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html xmlns:fb="http://ogp.me/ns/fb#" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<!--FB STUFF-->
+	<title>Test your Power Level</title>
+	<link rel="stylesheet" href="stylesheets/stylesheet.css" type="text/css" charset="utf-8">
+	<script type="text/javascript" src="javascripts/jquery-1.7.min.js"></script>
+	<script type="text/javascript" src="javascripts/vibrate.js"></script> 
+	<script type="text/javascript" src="javascripts/main.js"></script>  
+</head>
+
+<body>
+
+<div id="game-container">
+  <div id="start-container">
+    <div id="instructions">
+		<p>Just how much of a cartoon expert are you? The rules are simple: You'll see a cartoon protagonist on top. Click on the antagonist from the thumbnails below. If you're correct you get a point and bonus time added to the clock. If you're wrong you move on to the next character with no added bonus time. Finish all characters before time runs out and get a bonus 5 points. See how much you really know about cartoons, and then be sure to challenge your friends to do the same.</p>
+    </div>
+<script>
+  if ($.browser.mozilla) {
+    $("#instructions").replaceWith("<p>This game doesn't work with Firefox (we can't figure out why). Please use Chrome or IE9+</p>");
+  }
+</script>
+    <div id="share-score">
+      <!--<div style="text-align: center">Game Over</div>-->
+      <div id="final-score">?</div>
+      <div>Share your score:</div>
+      <a href="https://twitter.com/share" class="twitter-share-button" data-count="horizontal">Tweet</a><script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
+      <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div></br>
+    </div> 
+    <div id="loading-container">
+      <h4 style="color: red; text-align: center;">Loading ...</h4>
+      <div id="pb-container">
+        <span id="pb-left"></span><span id="pb-right">0%</span>   
+      </div>
+    </div>
+    <div id="start">START</div>
+  </div>
+
+  	<div id="backgroundPopup"></div>
+	  <div style="position: relative">
+		<div id="mm2"><div id="mm2-c">3</div></div>
+	  <div id="mm1"></div>
+	  <div id="mm3"></div>
+	  </div>
+	  <div id='score-container'>
+	    <h4>SCORE</h4>
+	    <h1 id="score"></h1>
+	    <div id="score-anim">
+	      <div id="score-anim-txt"></div>
+	      <div id="score-anim-val"></div>
+	    </div>
+	  </div>
+
+
+	  <div id='timer-container'>
+	    <h4>TIMER</h4>
+	    <h1 id="timer"></h1>
+	  </div>
+	  <div id="thumbs-grid"></div>
+	</div>
+</body>
+</html>
