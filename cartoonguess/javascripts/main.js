@@ -358,7 +358,7 @@ doLoad = function() {
   var img = null;
   var p = 0;  //%loaded
   var ploaded = 0; //count of loaded files
-  var total_files = 57*2+sounds_scoreTab.length+sounds_wrong.length+sounds_finalResult.length;
+  var total_files = 57*2-2;
   
   //path: path on server to folder containing image files
   //imgs: an array holding image names. Replaced with actual images
@@ -486,11 +486,13 @@ doStartNewMatch = function(buildGrid) {
 }
 
 playSound = function(sound) {
+	return;
   sound.currentTime = 0;
   sound.play();
 }
 
 playRandomSound = function(sound_array) {
+	return;
   sound = Math.floor(Math.random()*sound_array.length);
   sound = sound_array[sound];
   playSound(sound); 
