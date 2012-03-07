@@ -74,16 +74,16 @@ End Audio Settings
 Final Result Settings
 ---------------------------------------------------------------*/
 var finalResult = Array(); //Array to hold final reslut sounds and strings
-finalResult.push({mscore: 1, text: 'Have you ever turned on a TV?', audio : 'fail'});   
-finalResult.push({mscore: 5, text: '*cough*', audio : 'fail'});
-finalResult.push({mscore: 11, text: 'I really hope you spent your childhood doing something productive', audio : 'fail'});
+finalResult.push({mscore: 1, text: 'Herp-derp, anime is for kids, losers, and neckbeards', audio : 'fail'});   
+finalResult.push({mscore: 5, text: 'Narutard newfag', audio : 'fail'});
+finalResult.push({mscore: 11, text: 'Used to like anime, but grew out of it', audio : 'fail'});
 finalResult.push({mscore: 21, text: 'You should probably go try again', audio : 'ok'});
-finalResult.push({mscore: 31, text: 'You’re completely average', audio : 'ok'});
+finalResult.push({mscore: 31, text: 'Unimpressive, but not too bad either', audio : 'ok'});
 finalResult.push({mscore: 41, text: 'Not bad… really not bad', audio : 'win'});
-finalResult.push({mscore: 51, text: 'Certified toon historian', audio : 'win'});
-finalResult.push({mscore: 56, text: 'You’re the king of toon-town', audio : 'bigwin'});
-finalResult.push({mscore: 61, text: 'You are a golden god… of cartoon trivia', audio : 'bigwin'});
-finalResult.push({mscore: 62, text: 'You’re either a cheater or spend way too much time watching TV', audio : 'bigwin'});    
+finalResult.push({mscore: 51, text: 'Certified anime hipster', audio : 'win'});
+finalResult.push({mscore: 56, text: 'Your waifu would be proud, but your wife (if existing) would be deeply ashamed', audio : 'bigwin'});
+finalResult.push({mscore: 61, text: 'You are good enough to work in the industry', audio : 'bigwin'});
+finalResult.push({mscore: 62, text: '3DPD, you should have been born in anime Japan', audio : 'bigwin'});    
 /*--------------------------------------------------------------
 End Final Result Settings
 ---------------------------------------------------------------*/
@@ -358,12 +358,12 @@ doLoad = function() {
   var img = null;
   var p = 0;  //%loaded
   var ploaded = 0; //count of loaded files
-  var total_files = 57*2-2;
+  var total_files = PIC_COUNT*2;
   
   //path: path on server to folder containing image files
   //imgs: an array holding image names. Replaced with actual images
   loadImgs = function(path, imgs){  
-    for (i=1; i<57; i++) {
+    for (i=1; i<=PIC_COUNT; i++) {
       img = $(new Image());
       imgs.push(img);  
       img.load(function () {
@@ -377,8 +377,8 @@ doLoad = function() {
     }  
   }
   
-  loadImgs('thumbs/', thumb_imgs);
-  loadImgs('mainImages/', main_imgs);
+  loadImgs('animethumbs/', thumb_imgs);
+  loadImgs('animeImages/', main_imgs);
 
   //Load the audio
   if (audioObjSupport) { 
@@ -536,7 +536,9 @@ buildThumbsGrid = function() {
           var thumbID = event.data.thumbID; 
           mm3.empty(); 
           mm3.show();
-          mm3.append(thumb_imgs[thumbID-1].clone());
+   
+      
+  	    	mm3.append(thumb_imgs[thumbID-1].clone());
         });
             
         t.click({thumbID : thumb}, function(event) {
