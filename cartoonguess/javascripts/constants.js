@@ -1,1 +1,1 @@
-var PIC_COUNT = 24;
+var PIC_COUNT = 56;

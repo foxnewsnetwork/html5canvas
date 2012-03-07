@@ -74,15 +74,15 @@ End Audio Settings
 Final Result Settings
 ---------------------------------------------------------------*/
 var finalResult = Array(); //Array to hold final reslut sounds and strings
-finalResult.push({mscore: 1, text: 'Herp-derp, anime is for kids, losers, and neckbeards', audio : 'fail'});   
-finalResult.push({mscore: 5, text: 'Narutard newfag', audio : 'fail'});
-finalResult.push({mscore: 11, text: 'Used to like anime, but grew out of it', audio : 'fail'});
-finalResult.push({mscore: 21, text: 'You should probably go try again', audio : 'ok'});
-finalResult.push({mscore: 31, text: 'Unimpressive, but not too bad either', audio : 'ok'});
-finalResult.push({mscore: 41, text: 'Not bad… really not bad', audio : 'win'});
+finalResult.push({mscore: 1, text: 'Normal people should not even attempt this game', audio : 'fail'});   
+finalResult.push({mscore: 5, text: 'Go back to watching Naruto, newfag', audio : 'fail'});
+finalResult.push({mscore: 11, text: 'Unimpressive, but we will let you live', audio : 'fail'});
+finalResult.push({mscore: 21, text: 'Not bad!', audio : 'ok'});
+finalResult.push({mscore: 31, text: 'You are pretty good at this...', audio : 'ok'});
+finalResult.push({mscore: 41, text: 'True anime fan here', audio : 'win'});
 finalResult.push({mscore: 51, text: 'Certified anime hipster', audio : 'win'});
 finalResult.push({mscore: 56, text: 'Your waifu would be proud, but your wife (if existing) would be deeply ashamed', audio : 'bigwin'});
-finalResult.push({mscore: 61, text: 'You are good enough to work in the industry', audio : 'bigwin'});
+finalResult.push({mscore: 61, text: 'You are good enough to work in the industry (assuming you are not useless)', audio : 'bigwin'});
 finalResult.push({mscore: 62, text: '3DPD, you should have been born in anime Japan', audio : 'bigwin'});    
 /*--------------------------------------------------------------
 End Final Result Settings
